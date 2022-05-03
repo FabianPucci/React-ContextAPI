@@ -1,14 +1,15 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import ThemeProvider from "./context/ThemeProvider";
+import HolaProvider from "./context/HolaProvider";
 
 function App() {
   return (
-    <div>
-      <ThemeProvider>
+    <ThemeProvider>
+      <HolaProvider>
         <Navbar />
-      </ThemeProvider>
-    </div>
+      </HolaProvider>
+    </ThemeProvider>
   );
 }
 

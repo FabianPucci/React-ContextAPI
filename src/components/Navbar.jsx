@@ -1,12 +1,15 @@
 import React from "react";
 import { ThemeContext } from "../context/ThemeProvider";
+import { holaContext } from "../context/HolaProvider";
 
 const NavBar = () => {
   const { theme, handleStyle } = React.useContext(ThemeContext);
+  const { hola } = React.useContext(holaContext);
 
   return (
     <div style={{ background: theme.background, color: theme.color }}>
-      <h1>navbar</h1>
+      <h1>NavBar</h1>
+      <p>{hola}</p>
       <label>Color de Fondo</label>
       <input
         type="color"
